@@ -2975,7 +2975,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(245, 106, 106, 0.05);
+			background-color: rgba(245, 106, 106, 0.15);
 		}
 
 		input[type="submit"]:active,
@@ -3810,10 +3810,17 @@
 			color: inherit;
 			font-family: "Roboto Slab", serif;
 			font-size: 1.125em;
+			height: 5em;
 		}
 
 		#header .icons {
 			text-align: right;
+		}
+
+		#header .img {
+			border-bottom: 0;
+			padding: 4em 0 4em 0;
+			height: 2em;
 		}
 
 		@media screen and (max-width: 1680px) {
