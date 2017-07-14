@@ -3,14 +3,16 @@
 .form button {
     /*font-family: "Roboto", sans-serif;*/
     text-transform: uppercase;
+    text-align: center;
     outline: 0;
     background: #4099ff;
-    width: 10%;
+    width: 100px;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
-    margin-left: 45%;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
@@ -22,6 +24,18 @@
 .form button a:link, .form button a:visited  {
     color:#FFFFFF;
     text-decoration:none;
+}
+
+.form input {
+    /*font-family: "Roboto", sans-serif;*/
+    outline: 0;
+    background: #f2f2f2;
+    width: 150px;
+    border: 0;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 .container {
