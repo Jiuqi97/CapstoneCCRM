@@ -74,15 +74,28 @@
     <main class="hoc container clear">
         <!-- main body -->
         <!-- ################################################################################################ -->
-        <div class="login-page">
-            <div class="form">
-                <form>
-                    <button style="margin-bottom: 30px"><a href="#">Individual Asset</a></button>
-                    <button><a href="#">Portfolio Asset</a></button>
-                    <!--<p class="message">Already registered? <a href="#">Sign In</a></p>-->
-                </form>
-            </div>
+        <div class="sectiontitle">
+            <h3 class="heading">Offer Options</h3>
+            <p>Create at most 3 options. <br><strong>Notice: The percentages of three categories should sum up to 100%.</strong></p>
         </div>
+        <form method="POST">
+            <div id="dynamicInput">
+                <div id="option 1" class="login-page">
+                    <div class="form">
+                        <div class="sectiontitle"><h3 class="heading">Option 1</h3></div>
+                        Best Asset<br><input type="text" placeholder="Less than %">
+                        Medium Asset<br><input type="text" placeholder="%">
+                        Must Buy Asset<br><input type="text" placeholder="More than %">
+                        <i class="fa fa-plus-square-o" aria-hidden="true" onClick="addInput('dynamicInput'); return false;" style="font-size: 300%; color: #00ADEF;"></i>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="form" style="position: relative; background: #FFFFFF; max-width: 360px; margin: 0 auto 100px; padding: 25px; box-shadow: none">
+            <button style="width: 80%; margin-left: 10%; margin-right: 10%;"><a href="#">Send Offer</a></button>
+        </div>
+
         <!-- ################################################################################################ -->
         <!-- / main body -->
         <div class="clear"></div>
@@ -96,6 +109,7 @@
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
 <script src="../layout/scripts/jquery.flexslider-min.js"></script>
+<script src="../layout/scripts/option.js"></script>
 <script src="https://use.fontawesome.com/0bf414ba56.js"></script>
 </body>
 </html>
